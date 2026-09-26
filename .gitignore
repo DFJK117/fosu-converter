@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# PyInstaller
+build/
+dist/
+*.spec.bak
+
+# ffmpeg 本地解压目录（打包时才需要）
+packaging/ffmpeg-*/
+
+# 谱面 / 音频等大文件不进仓库
+*.osz
+*.ogg
+*.mp3
+*.wav
+
+# IDE / 系统
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
