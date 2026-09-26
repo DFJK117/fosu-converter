@@ -1,5 +1,9 @@
 # fosu — FNF (PsychEngine) → osu!mania 一键转谱器
 
+**⬇️ 直接下载：[fosu.exe](https://github.com/DFJK117/fosu-converter/releases/latest/download/fosu.exe)**（单文件，已内置 ffmpeg，下载后双击即用）
+
+> 上面的链接永远指向最新版 Release，无需登录、无需解压仓库。
+
 把 Friday Night Funkin' 的 PsychEngine 谱面 JSON 一键转成 osu!mania 谱面包（.osz）。
 纯 Python 标准库实现，GUI 零第三方依赖；打包好的单文件 exe 已内置 ffmpeg。
 
