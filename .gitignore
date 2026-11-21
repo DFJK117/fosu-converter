@@ -24,3 +24,6 @@ packaging/ffmpeg-*/
 .vscode/
 Thumbs.db
 .DS_Store
+
+# 打包用的 ffmpeg 二进制（自行下载 BtbN GPL 版放到此）
+packaging/ffmpeg.exe

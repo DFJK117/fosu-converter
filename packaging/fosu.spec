@@ -1,12 +1,13 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-
 a = Analysis(
     ['fosu_app.py'],
     pathex=[],
-    binaries=[('ffmpeg-master-latest-win64-gpl/bin/ffmpeg.exe', '.')],
+    # ffmpeg.exe 绑进 exe（_MEIPASS/ffmpeg.exe）：音频转码 / 混音 / 视频 / 编谱器播放都靠它
+    binaries=[('ffmpeg.exe', '.')],
     datas=[],
-    hiddenimports=[],
+    # 编谱器与音频引擎是惰性导入（运行时 import），必须显式列为 hiddenimports
+    hiddenimports=['fosu_editor', 'fosu_audio', 'fosu_osumod', 'wave', 'array', 'ctypes'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
